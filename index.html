@@ -22,7 +22,7 @@
         <a class="logo" href="./index.html"><span>Web</span>Studio </a>
         <ul class="menu-nav list">
           <li class="item">
-            <a href="./index.html" class="menu link current ">Студия</a>
+            <a href="./index.html" class="menu link current">Студия</a>
           </li>
           <li class="item">
             <a href="./portfolio.html" class="menu">Портфолио</a>
@@ -54,11 +54,29 @@
           Эффективные решения<br />
           для вашего бизнеса
         </h1>
-        <button data-modal-open class="button" type="button">Заказать услугу</button>
+        <button data-modal-open class="button" type="button">
+          Заказать услугу
+        </button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <svg data-modal-close class="btn-close" width="30" height="30">
-              <use href="./images/icon/icon-close.svg#icon-close"></use></svg>
+              <use href="./images/icon/icon-close.svg#icon-close"></use>
+            </svg>
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <form name="user-form" autocapitalize="on">
+              <label for="user-name">Имя</label>
+              <input type="text" name="name" id="user-name" autofocus />
+              <label for="user-phone">Телефон</label>
+              <input type="tel" name="phone" id="user-phone" />
+              <label for="user-email">Почта</label>
+              <input type="email" name="email" id="user-email" />
+              <label for="user-comment">Комментарий</label>
+              <textarea name="comment" id="user-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+              <label for="">
+                <input type="checkbox" name="" id="">
+              </label>
+            </form>
+            <button class="btn-form" type="submit">Отправить</button>
           </div>
         </div>
       </div>
@@ -227,7 +245,7 @@
                 </li>
                 <li class="social-item-list">
                   <a class="social-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                    <svg class="social-item-dscr" width="20" height="20" >
+                    <svg class="social-item-dscr" width="20" height="20">
                       <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -243,7 +261,7 @@
               <ul class="social-list list">
                 <li class="social-item-list">
                   <a class="social-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="instagram">
-                    <svg class="social-item-dscr" width="20" height="20" >
+                    <svg class="social-item-dscr" width="20" height="20">
                       <use href="./images/icon/symbol-defs.svg#icon-instagram"></use>
                     </svg>
                   </a>
@@ -264,7 +282,7 @@
                 </li>
                 <li class="social-item-list">
                   <a class="social-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-                    <svg class="social-item-dscr" width="20" height="20" >
+                    <svg class="social-item-dscr" width="20" height="20">
                       <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
                     </svg>
                   </a>
@@ -281,14 +299,14 @@
         <ul class="customers-list list">
           <li class="customers">
             <a class="customers-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="client-1">
-              <svg class="customers-icon" width="106" height="60" >
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/brand/icon-defs.svg#icon-client-1"></use>
               </svg>
             </a>
           </li>
           <li class="customers">
             <a class="customers-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="client-2">
-              <svg class="customers-icon" width="106" height="60" >
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/brand/icon-defs.svg#icon-client-2"></use>
               </svg>
             </a>
@@ -309,14 +327,14 @@
           </li>
           <li class="customers">
             <a class="customers-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="client-5">
-              <svg class="customers-icon" width="106" height="60" >
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/brand/icon-defs.svg#icon-client-5"></use>
               </svg>
             </a>
           </li>
           <li class="customers">
             <a class="customers-item-link" href="" target="_blank" rel="noopener noreferrer" aria-label="client-6">
-              <svg class="customers-icon" width="106" height="60" >
+              <svg class="customers-icon" width="106" height="60">
                 <use href="./images/brand/icon-defs.svg#icon-client-6"></use>
               </svg>
             </a>
@@ -325,7 +343,7 @@
       </div>
     </section>
   </main>
-  
+
   <footer>
     <div class="container dscr">
       <div class="footer-item">
@@ -371,7 +389,7 @@
           </li>
           <li class="footer-social-item">
             <a class="footer-social-link" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
-              <svg class="footer-dscr" width="20" height="20" >
+              <svg class="footer-dscr" width="20" height="20">
                 <use href="./images/icon/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </a>
