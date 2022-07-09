@@ -670,6 +670,7 @@ li {
   border-radius: 4px;
   top: 50%;
   left: 50%;
+  padding: 0 40px 40px 40px;
   transform: translate(-50%, -50%);
 }
 .backdrop {
@@ -709,34 +710,89 @@ label {
   color: rgba(117, 117, 117, 0.5);
 }
 .user-form {
-  display: block;
-  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
 }
-.form-title{
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-margin-top: 46px;
-margin-left: auto;
-margin-right: auto;
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
-.btn-form{
-background: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-font-size: 16px;
-line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
-flex-direction: column;
-letter-spacing: 0.06em;
-color: var(--hero-color);
-padding-top: 10px;
-padding-bottom: 10px;
-padding-left: 56px;
-padding-right: 56px;
+.user-name-desc {
+  width: 448px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.user-name-text{
+  margin-bottom: 4px;
+}
+.icon-name{
+  display: con;
+  position: absolute;
+}
+.user-phone-desc {
+  width: 448px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.user-phone-text{
+  margin-bottom: 4px;
+}
+.user-mail-desc {
+  width: 448px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.user-mail-text{
+  margin-bottom: 4px;
+}
+.user-comment-desc{
+  width: 448px;
+  height: 120px;
+  box-sizing: border-box;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.user-comment-text{
+  margin-bottom: 4px;
+}
+.form-link {
+  text-decoration: underline;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  gap: 10;
+}
+.btn-form {
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  letter-spacing: 0.06em;
+  color: var(--hero-color);
+  padding: 10px 56px;
+  margin: 30px auto 40px;
 }
