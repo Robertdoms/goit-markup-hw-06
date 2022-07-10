@@ -9,6 +9,7 @@
   --social-icon-hover: #2196f3;
   --social: #ffffff;
   --btn-color: #f5f4fa;
+  --footer-color-form: #2f303a;
 }
 body {
   color: var(--primary-text-color);
@@ -36,7 +37,7 @@ img {
 .item {
   padding: 0;
 }
-span {
+.logo-header {
   color: var(--accent-color);
 }
 .list {
@@ -696,23 +697,14 @@ li {
   margin-right: 8px;
   cursor: pointer;
 }
-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: #757575;
-}
+
 .placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.user-form {
-  display: flex;
-  flex-direction: column;
-}
+
 .form-title {
   font-weight: 700;
   font-size: 20px;
@@ -731,14 +723,26 @@ label {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.user-name-form {
+  display: block;
+  position: relative;
   margin-bottom: 10px;
 }
-.user-name-text{
+.user-name-text {
   margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
-.icon-name{
-  display: con;
+.user-name-icon {
   position: absolute;
+}
+.user-name-form:checked + .user-name-icon {
+  fill: var(--social-icon-hover);
+  border-color: var(--social-icon-hover);
 }
 .user-phone-desc {
   width: 448px;
@@ -746,10 +750,22 @@ label {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.user-phone-form {
+  display: block;
+  position: relative;
   margin-bottom: 10px;
 }
-.user-phone-text{
+.user-phone-text {
   margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.user-phone-icon {
+  position: absolute;
 }
 .user-mail-desc {
   width: 448px;
@@ -757,42 +773,107 @@ label {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.user-mail-text {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.user-mail-form {
+  display: block;
+  position: relative;
   margin-bottom: 10px;
 }
-.user-mail-text{
-  margin-bottom: 4px;
+.user-mail-icon {
+  position: absolute;
 }
-.user-comment-desc{
+.user-comment-desc {
   width: 448px;
   height: 120px;
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
+  resize: none;
 }
-.user-comment-text{
+.user-comment-text {
   margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 .form-link {
   text-decoration: underline;
 }
-.checkbox{
-  display: flex;
-  align-items: center;
-  gap: 10;
-}
+
 .btn-form {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--hero-color);
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  letter-spacing: 0.06em;
-  color: var(--hero-color);
   padding: 10px 56px;
   margin: 30px auto 40px;
+  border: transparent;
+}
+.footer-form-title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--social);
+  margin-bottom: 20px;
+}
+.footer-form {
+  margin-left: 93px;
+}
+.footer-btn {
+  display: flex;
+  align-items: center;
+}
+.footer-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding: 10px 29px;
+  border: transparent;
+  margin-left: 12px;
+}
+.footer-form-icon {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.footer-form-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--footer-color-form);
+}
+.checkbox-icon {
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
 }
