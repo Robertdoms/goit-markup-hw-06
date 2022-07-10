@@ -19,7 +19,8 @@
   <header class="header">
     <div class="container">
       <nav class="nav-header">
-        <a class="logo" href="./index.html"><span>Web</span>Studio </a>
+        <a class="logo" href="./index.html"><span class="logo-header">Web</span>Studio
+        </a>
         <ul class="menu-nav list">
           <li class="item">
             <a href="./index.html" class="menu link current">Студия</a>
@@ -66,24 +67,29 @@
               Оставьте свои данные, мы вам перезвоним
             </h2>
             <form name="user-form" autocapitalize="on">
-              <label class="user-name-text" for="user-name">Имя
-                <input class="user-name-desc" type="text" name="name" id="user-name" autofocus />
+              <label class="user-name-form" for="user-name"><span class="user-name-text">Имя</span>
                 <svg class="user-name-icon" width="12" height="12">
                   <use class="icon-name" href="./images/icon/form-icon.svg#icon-user"></use>
-                </svg></label>
-              <label class="user-phone-text" for="user-phone">Телефон
-              <input class="user-phone-desc" type="tel" name="phone" id="user-phone" /><svg class="user-phone-icon" width="13" height="13">
-                <use class="icon-phone" href="./images/icon/form-icon.svg#icon-phone"></use>
-              </svg></label>
-              <label class="user-mail-text" for="user-mail">Почта
-              <input class="user-mail-desc" type="email" name="mail" id="user-mail" /><svg class="user-mail-icon" width="15" height="12">
-                <use class="icon-mail" href="./images/icon/form-icon.svg#icon-mail"></use>
-              </svg></label>
-              <label class="user-comment-text" for="user-comment">Комментарий</label>
-              <textarea class="user-comment-desc" name="comment" id="user-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
-              <label class="checkbox-form" for="">
-                <input  type="checkbox" name="" id="" />
-                Соглашаюсь с рассылкой и принимаю
+                </svg>
+                <input class="user-name-desc" type="text" name="name" id="user-name" autofocus />
+              </label>
+              <label class="user-phone-form" for="user-phone"><span class="user-phone-text">Телефон</span>
+                <svg class="user-phone-icon"
+                  width="13" height="13">
+                  <use class="icon-phone" href="./images/icon/form-icon.svg#icon-phone"></use>
+                </svg>
+                <input class="user-phone-desc" type="tel" name="phone" id="user-phone" /></label>
+              <label class="user-mail-form" for="user-mail"><span class="user-mail-text">Почта</span>
+                <svg class="user-mail-icon"
+                  width="15" height="12">
+                  <use class="icon-mail" href="./images/icon/form-icon.svg#icon-mail"></use>
+                </svg>
+                <input class="user-mail-desc" type="email" name="mail" id="user-mail" /></label>
+              <label class="user-comment-form" ><span class="user-comment-text">Комментарий</span>
+              <textarea class="user-comment-desc" name="comment" placeholder="Введите текст"></textarea></label>
+              <label class="checkbox-form">
+                <input type="checkbox" name="user-checkbox" /><span><svg class="checkbox-icon" width="16" height="15"><use class="icon-check" href="./images/icon/form-icon.svg#icon-checkbox"></use></svg></span>
+                <span>Соглашаюсь с рассылкой и принимаю</span>
                 <a class="form-link" href="">Условия договора</a>
               </label>
             </form>
@@ -406,6 +412,18 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="footer-form">
+        <p class="footer-form-title">Подпишитесь на рассылку</p>
+        <div class="footer-btn">
+          <input class="footer-form-mail" type="mail" name="E-mail" placeholder="E-mail" />
+          <button class="footer-btn-text" type="submit">
+            Подписаться
+            <svg class="footer-form-icon" width="24" height="24">
+              <use class="footer-form-icon-dscr" href="./images/icon/icon-form.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </footer>
