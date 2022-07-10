@@ -725,6 +725,9 @@ li {
   border-radius: 4px;
   padding-left: 35px;
   cursor: pointer;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .user-name-text {
@@ -748,14 +751,11 @@ li {
   margin-top: 14px ;
   transition: fill 250ms ;
 }
-.user-name-desc:checked + .icon-name {
+.user-name-desc:focus,
+.user-name-desc:hover +
+.icon-name {
+  outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
-  border: var(--social-icon-hover);
-}
-.icon-name{
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-phone-desc {
   width: 448px;
@@ -765,6 +765,9 @@ li {
   border-radius: 4px;
   cursor: pointer;
   padding-left: 35px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-phone-form {
   display: block;
@@ -786,14 +789,11 @@ li {
   margin-top: 14px ;
   transition: fill 250ms ;
 }
-.user-phone-desc:checked + .icon-phone {
+.user-phone-desc:focus,
+.user-phone-desc:hover +
+.icon-phone {
+  outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
-  border: var(--social-icon-hover);
-}
-.icon-phone{
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-mail-desc {
   width: 448px;
@@ -803,6 +803,9 @@ li {
   border-radius: 4px;
   cursor: pointer;
   padding-left: 35px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-mail-text {
   display: block;
@@ -824,14 +827,11 @@ li {
   margin-top: 14px ;
   transition: fill 250ms ;
 }
-.icon-mail{
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.user-mail-desc:checked + .icon-mail {
+.user-mail-desc:focus,
+.user-mail-desc:hover +
+.icon-mail {
+  outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
-  border: var(--social-icon-hover);
 }
 .user-comment-desc {
   width: 448px;
