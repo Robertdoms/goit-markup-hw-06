@@ -724,11 +724,9 @@ li {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 35px;
+  cursor: pointer;
 }
-.icon-name{
-  display: flex;
-  position: relative;
-}
+
 .user-name-text {
   display: block;
   font-weight: 400;
@@ -750,9 +748,9 @@ li {
   margin-top: 14px ;
   transition: fill 250ms ;
 }
-.user-name-form:checked + .icon-name {
+.user-name-desc:checked + .icon-name {
   fill: var(--social-icon-hover);
-  border-color: var(--social-icon-hover);
+  border: var(--social-icon-hover);
 }
 .user-phone-desc {
   width: 448px;
@@ -783,6 +781,10 @@ li {
   margin-top: 14px ;
   transition: fill 250ms ;
 }
+.user-phone-desc:checked + .icon-phone {
+  fill: var(--social-icon-hover);
+  border: var(--social-icon-hover);
+}
 .user-mail-desc {
   width: 448px;
   height: 40px;
@@ -811,6 +813,10 @@ li {
   margin-left: 15px;
   margin-top: 14px ;
   transition: fill 250ms ;
+}
+.user-mail-desc:checked + .icon-mail {
+  fill: var(--social-icon-hover);
+  border: var(--social-icon-hover);
 }
 .user-comment-desc {
   width: 448px;
