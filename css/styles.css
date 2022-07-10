@@ -752,6 +752,11 @@ li {
   fill: var(--social-icon-hover);
   border: var(--social-icon-hover);
 }
+.icon-name{
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .user-phone-desc {
   width: 448px;
   height: 40px;
@@ -785,6 +790,11 @@ li {
   fill: var(--social-icon-hover);
   border: var(--social-icon-hover);
 }
+.icon-phone{
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .user-mail-desc {
   width: 448px;
   height: 40px;
@@ -813,6 +823,11 @@ li {
   margin-left: 15px;
   margin-top: 14px ;
   transition: fill 250ms ;
+}
+.icon-mail{
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-mail-desc:checked + .icon-mail {
   fill: var(--social-icon-hover);
