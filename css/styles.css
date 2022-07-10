@@ -723,28 +723,34 @@ li {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-}
-.user-name-form {
-  
- 
-  margin-bottom: 10px;
+  padding-left: 35px;
 }
 .icon-name{
   display: flex;
   position: relative;
 }
 .user-name-text {
-  margin-bottom: 4px;
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+  margin-bottom: 4px;
+  
+}
+.user-name-form {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
 }
 .user-name-icon {
   position: absolute;
+  margin-left: 15px;
+  margin-top: 14px ;
+  transition: fill 250ms ;
 }
-.user-name-form:checked + .user-name-icon {
+.user-name-form:checked + .icon-name {
   fill: var(--social-icon-hover);
   border-color: var(--social-icon-hover);
 }
@@ -754,6 +760,8 @@ li {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
+  padding-left: 35px;
 }
 .user-phone-form {
   display: block;
@@ -761,6 +769,7 @@ li {
   margin-bottom: 10px;
 }
 .user-phone-text {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -770,6 +779,9 @@ li {
 }
 .user-phone-icon {
   position: absolute;
+  margin-left: 15px;
+  margin-top: 14px ;
+  transition: fill 250ms ;
 }
 .user-mail-desc {
   width: 448px;
@@ -777,8 +789,11 @@ li {
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
+  padding-left: 35px;
 }
 .user-mail-text {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -793,6 +808,9 @@ li {
 }
 .user-mail-icon {
   position: absolute;
+  margin-left: 15px;
+  margin-top: 14px ;
+  transition: fill 250ms ;
 }
 .user-comment-desc {
   width: 448px;
@@ -802,8 +820,11 @@ li {
   border-radius: 4px;
   margin-bottom: 10px;
   resize: none;
+  cursor: pointer;
+  padding-left: 16px;
 }
 .user-comment-text {
+  display: block;
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -830,6 +851,7 @@ li {
   padding: 10px 56px;
   margin: 30px auto 40px;
   border: transparent;
+  cursor: pointer;
 }
 .footer-form-title {
   font-weight: 700;
@@ -878,6 +900,7 @@ li {
 }
 .checkbox-form {
   display: flex;
+  cursor: pointer;
 }
 .checkbox-form:checked + .checkbox-icon {
   outline: 1px solid #188CE8;
