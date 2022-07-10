@@ -757,6 +757,9 @@ li {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
+.icon-name{
+  fill: currentColor;
+}
 .user-phone-desc {
   width: 448px;
   height: 40px;
@@ -782,6 +785,9 @@ li {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+}
+.icon-phone{
+  fill: currentColor;
 }
 .user-phone-icon {
   position: absolute;
@@ -826,6 +832,9 @@ li {
   margin-left: 15px;
   margin-top: 14px ;
   transition: fill 250ms ;
+}
+.icon-mail{
+  fill: currentColor;
 }
 .user-mail-desc:focus,
 .user-mail-desc:hover +
