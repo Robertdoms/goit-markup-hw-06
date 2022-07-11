@@ -858,6 +858,10 @@ li {
   letter-spacing: 0.01em;
   color: #757575;
 }
+.user-comment-desc:focus,
+.user-comment-desc:hover {
+  outline: 1px solid var(--social-icon-hover);
+}
 .form-link {
   text-decoration: underline;
 }
