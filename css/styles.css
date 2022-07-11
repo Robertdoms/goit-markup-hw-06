@@ -750,8 +750,8 @@ li {
   margin-top: 14px;
   transition: fill 250ms;
 }
-.user-name-desc:focus,
-.user-name-desc:hover + .icon-name {
+.user-name-desc:hover,
+.user-name-desc:focus ~ .icon-name {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
@@ -793,8 +793,8 @@ li {
   margin-top: 14px;
   transition: fill 250ms;
 }
-.user-phone-desc:focus,
-.user-phone-desc:hover + .icon-phone {
+.user-phone-desc:hover,
+.user-phone-desc:focus ~ .icon-phone {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
@@ -833,8 +833,9 @@ li {
 .icon-mail {
   fill: currentColor;
 }
-.user-mail-desc:focus,
-.user-mail-desc:hover + .icon-mail {
+
+.user-mail-desc:hover,
+.user-mail-desc:focus ~ .user-mail-icon {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
@@ -858,8 +859,8 @@ li {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.user-comment-desc:focus,
-.user-comment-desc:hover {
+.user-comment-desc:hover,
+.user-comment-desc:focus {
   outline: 1px solid var(--social-icon-hover);
 }
 .form-link {
