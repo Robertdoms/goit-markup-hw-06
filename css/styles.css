@@ -671,7 +671,7 @@ li {
   border-radius: 4px;
   top: 50%;
   left: 50%;
-  padding: 0 40px 40px 40px;
+  padding: 40px;
   transform: translate(-50%, -50%);
 }
 .backdrop {
@@ -690,14 +690,22 @@ li {
   opacity: 0;
   pointer-events: none;
 }
-.btn-close {
+.close {
+  width: 30px;
+  height: 30px;
   position: absolute;
   right: 0;
+  top: 0;
   margin-top: 8px;
   margin-right: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
   cursor: pointer;
 }
-
+.close:hover,
+.close:focus + .btn-close-icon {
+  fill: var(--social-icon-hover);
+}
 .placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -715,7 +723,6 @@ li {
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
 }
 .user-name-desc {
   width: 448px;
@@ -839,16 +846,20 @@ li {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
+.user-comment-form{
+  margin-bottom: 10px;
+}
 .user-comment-desc {
   width: 448px;
   height: 120px;
   box-sizing: border-box;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   resize: none;
   cursor: pointer;
+  padding-top: 12px;
   padding-left: 16px;
+  margin-bottom: 10px;
 }
 .user-comment-text {
   display: block;
@@ -865,24 +876,25 @@ li {
 }
 .form-link {
   text-decoration: underline;
+  color: #2196F3;
+  padding-left: 4px;
 }
 
 .btn-form {
-  background: var(--accent-color);
+  Width:200px;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--hero-color);
-  display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
   padding: 10px 56px;
-  margin: 30px auto 40px;
-  border: transparent;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: none;
   cursor: pointer;
+  
 }
 .footer-form-title {
   font-weight: 700;
@@ -892,11 +904,12 @@ li {
   margin-bottom: 20px;
 }
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-btn {
   display: flex;
   align-items: center;
+ 
 }
 .footer-btn-text {
   display: flex;
@@ -913,6 +926,7 @@ li {
   padding: 10px 29px;
   border: transparent;
   margin-left: 12px;
+  cursor: pointer;
 }
 .footer-form-icon {
   display: inline-block;
