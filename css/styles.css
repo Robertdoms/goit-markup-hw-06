@@ -738,7 +738,6 @@ li {
   letter-spacing: 0.01em;
   color: #757575;
   margin-bottom: 4px;
-  
 }
 .user-name-form {
   display: block;
@@ -748,16 +747,15 @@ li {
 .user-name-icon {
   position: absolute;
   margin-left: 15px;
-  margin-top: 14px ;
-  transition: fill 250ms ;
+  margin-top: 14px;
+  transition: fill 250ms;
 }
 .user-name-desc:focus,
-.user-name-desc:hover +
-.icon-name {
+.user-name-desc:hover + .icon-name {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
-.icon-name{
+.icon-name {
   fill: currentColor;
 }
 .user-phone-desc {
@@ -786,18 +784,17 @@ li {
   letter-spacing: 0.01em;
   color: #757575;
 }
-.icon-phone{
+.icon-phone {
   fill: currentColor;
 }
 .user-phone-icon {
   position: absolute;
   margin-left: 15px;
-  margin-top: 14px ;
-  transition: fill 250ms ;
+  margin-top: 14px;
+  transition: fill 250ms;
 }
 .user-phone-desc:focus,
-.user-phone-desc:hover +
-.icon-phone {
+.user-phone-desc:hover + .icon-phone {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
@@ -830,15 +827,14 @@ li {
 .user-mail-icon {
   position: absolute;
   margin-left: 15px;
-  margin-top: 14px ;
-  transition: fill 250ms ;
+  margin-top: 14px;
+  transition: fill 250ms;
 }
-.icon-mail{
+.icon-mail {
   fill: currentColor;
 }
 .user-mail-desc:focus,
-.user-mail-desc:hover +
-.icon-mail {
+.user-mail-desc:hover + .icon-mail {
   outline: 1px solid var(--social-icon-hover);
   fill: var(--social-icon-hover);
 }
@@ -927,14 +923,24 @@ li {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--footer-color-form);
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  cursor: pointer;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-mail:hover,
+.footer-form-mail:focus {
+  outline: 1px solid var(--social-icon-hover);
 }
 .checkbox-form {
   display: flex;
   cursor: pointer;
 }
 .checkbox-form:checked + .checkbox-icon {
-  outline: 1px solid #188CE8;
-  background-color: #188CE8;
+  outline: 1px solid #188ce8;
+  background-color: #188ce8;
 }
 .checkbox-icon {
   display: flex;
@@ -945,7 +951,4 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
