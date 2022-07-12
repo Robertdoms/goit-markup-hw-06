@@ -765,7 +765,7 @@ li {
 }
 .user-name-form:focus-within .user-name-desc,
 .user-name-form:hover .user-name-desc  {
-  border-color: 1px solid var(--social-icon-hover);
+  border: 1px solid var(--social-icon-hover);
 }
 .user-name-form:focus-within .user-name-icon,
 .user-name-form:hover .user-name-icon  {
@@ -809,7 +809,7 @@ li {
 }
 .user-phone-form:focus-within .user-phone-desc,
 .user-phone-form:hover .user-phone-desc  {
-  border-color: 1px solid var(--social-icon-hover);
+  border: 1px solid var(--social-icon-hover);
 }
 .user-phone-form:focus-within .user-phone-icon,
 .user-phone-form:hover .user-phone-icon  {
@@ -852,7 +852,7 @@ li {
 }
 .user-mail-form:focus-within .user-mail-desc,
 .user-mail-form:hover .user-mail-desc  {
-  border-color: 1px solid var(--social-icon-hover);
+  border: 1px solid var(--social-icon-hover);
 }
 .user-mail-form:focus-within .user-mail-icon,
 .user-mail-form:hover .user-mail-icon  {
