@@ -769,6 +769,7 @@ li {
 .user-name-form:focus-within .user-name-desc,
 .user-name-form:hover .user-name-desc  {
   border: 1px solid var(--social-icon-hover);
+  outline: none;
 }
 .user-name-form:focus-within .user-name-icon,
 .user-name-form:hover .user-name-icon  {
@@ -813,6 +814,7 @@ li {
 .user-phone-form:focus-within .user-phone-desc,
 .user-phone-form:hover .user-phone-desc  {
   border: 1px solid var(--social-icon-hover);
+  outline: none;
 }
 .user-phone-form:focus-within .user-phone-icon,
 .user-phone-form:hover .user-phone-icon  {
@@ -845,7 +847,7 @@ li {
   flex-direction: column;
   text-align: start;
   margin-bottom: 10px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-mail-icon {
   position: absolute;
@@ -856,13 +858,15 @@ li {
 .user-mail-form:focus-within .user-mail-desc,
 .user-mail-form:hover .user-mail-desc  {
   border: 1px solid var(--social-icon-hover);
+  outline: none;
 }
 .user-mail-form:focus-within .user-mail-icon,
 .user-mail-form:hover .user-mail-icon  {
   fill:  var(--social-icon-hover);
 }
 .user-comment-form{
-  margin-bottom: 10px;
+  display: block  ;
+  margin-bottom: 20px;
 }
 .user-comment-desc {
   width: 448px;
@@ -874,7 +878,9 @@ li {
   cursor: pointer;
   padding-top: 12px;
   padding-left: 16px;
-  margin-bottom: 10px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-comment-text {
   display: block;
@@ -960,13 +966,14 @@ li {
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   cursor: pointer;
-  transition-property: outline;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-mail:hover,
 .footer-form-mail:focus {
-  outline: 1px solid var(--social-icon-hover);
+  border: 1px solid var(--social-icon-hover);
+  outline: none;
 }
 .checkbox-form {
   display: flex;
